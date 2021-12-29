@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='Title' content='이지모청 | easymochung' >
+    <meta name='Description' content='모바일 청첩장을 쉽게 공유하기'> 
+    <meta name='robots' content='index, follow'>
+    <meta name='Keywords' content='모바일 청첩장' >
+    <meta name='Author' content='my.personality.check@gmail.com'>
+    <meta property="og:title" content="이지모청 | easymochung" />
+    <meta property="og:description" content="모바일 청첩장을 쉽게 공유하기" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://wedding220213.quv.kr/" />
+    <link rel="apple-touch-icon" href="./favicon.ico">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="icon" href="./favicon.ico">
+    <title>이지모청</title>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script src="./index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./index.css">
+    <script>Kakao.init('c77cd1cf3966225e47cbf5c522adfe7b');
+        console.log(Kakao.isInitialized());</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1565128590799403"
+    crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4X4PWENK1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-C4X4PWENK1');
+    </script>
+</head>
+<body>
+    <header>
+        <div class='container'>
+            <div class='card border-light shadow py-4'>
+                <h1>이지모청</h1>
+                <p style='font-size:1.2rem'>모바일 청첩장을 쉽고 예쁘게</p>
+            </div>
+        </div>
+    </header>
+
+    <div id='main' class='container'>
+        <div class='card border-light my-4 shadow'>
+            <div class='list-group list-group-flush'>
+                <li class='list-group-item'>
+                    <div class='p-4'>
+                        <h3 class='mb-3'>❗ 사용하시기 전에 꼭 읽어주세요 ❗</h3>
+                        <p>
+                            이 서비스는 결혼식을 앞두신 분들께서 <mark>카카오톡으로 모바일청첩장을 쉽고 예쁘게</mark> 보내실 수 있도록 만든 것입니다.<br>사용에 앞서, 모바일청첩장 링크를 준비해주셔야 하고, <a href='https://silky-trout-731.notion.site/bc12c4fb97594c02b96e75f98597b430' target="_blank">사용방법</a>을 꼭 읽고 따라주세요!
+                        </p> 
+                    </div>
+                    <div class='mx-auto row mb-3'>
+                        <div class='col-sm-12 col-md-6'>
+                            <ins class="kakao_ad_area" style="display:none;"
+                                data-ad-unit    = "DAN-eLuLbgFdibeAeOeK"
+                                data-ad-width   = "320"
+                                data-ad-height  = "50"></ins>
+                            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+                        </div>
+                        <div class='col-sm-12 col-md-6'>
+                            <ins class="kakao_ad_area" style="display:none;"
+                                data-ad-unit    = "DAN-hBnBoR7fkDN3O23C"
+                                data-ad-width   = "320"
+                                data-ad-height  = "50"></ins>
+                            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+                        </div>
+                    </div>
+                </li>
+                <li class='list-group-item'>
+                    <div class='p-4'>
+                        <h3>💌 카톡 내용 채우기 💌</h3>
+                        <p>* 표시는 필수 영역입니다.</p>
+                        <div class="form-floating my-3">
+                            <input type="text" class="form-control" id="floatingImg" placeholder="사진" required>
+                            <label for="floatingImg">* 메인 사진 링크</label>
+                            <div class='form-text'>사용방법에 있는대로 하신 후 <b>그대로</b> 붙여 넣어 주세요</div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingTitle" placeholder="제목" required>
+                            <label for="floatingTitle">* 제목</label>
+                            <div class='form-text'>예시: 000과 000의 결혼식에 초대합니다</div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="floatingDesc" placeholder="설명" style="height: 80px" required></textarea>
+                            <label for="floatingDesc">* 설명</label>
+                            <div class='form-text'>예시: 00월 00일 00시 <br />000웨딩홀</div>
+                        </div>
+                        <div class='row mb-3'>
+                            <div class='col'>
+                                <div class='form-floating'>
+                                    <input type='number' class='form-control' placeholder='연' id="floatingYear" aria-label='연' required>
+                                    <label for="floatingYear">* 연</label>
+                                </div>
+                            </div>
+                            <div class='col'>
+                                <div class='form-floating'>
+                                    <input type='number' class='form-control' placeholder='월' id="floatingMonth" aria-label='월' required>
+                                    <label for="floatingMonth">* 월</label>
+                                </div>
+                            </div>
+                            <div class='col'>
+                                <div class='form-floating'>
+                                    <input type='number' class='form-control' placeholder='일' id="floatingDay" aria-label='일' required>
+                                    <label for="floatingDay">*일</label>
+                                </div>
+                            </div>
+                            <div class='form-text'>예시: 🤍2021 🗨7 👤31<br />숫자만 입력가능합니다.</div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingButton1" placeholder="https" required>
+                            <label for="floatingButton1">* 첫번째 버튼</label>
+                            <div class='form-text'>이 버튼에 걸리는 링크가 공통링크(사진, 글을 탭하면 이동하는 링크)가 되기 때문에 첫번째 버튼을 '모바일 청첩장'으로 하시는 걸 추천드립니다!</div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingLink1" placeholder="https" required>
+                            <label for="floatingLink1">* 첫번째 버튼 링크</label>
+                            <div class='form-text'>https부터 입력해주세요</div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingButton2" placeholder="https" required>
+                            <label for="floatingButton2">* 두번째 버튼</label>
+                            <div class='form-text'>식장 오시는 길, 마음 전하기 등 원하시는 걸로 정하세요!</div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingLink2" placeholder="두번째 버튼 링크" required>
+                            <label for="floatingLink2">* 두번째 버튼 링크</label>
+                            <div class='form-text'>https부터 입력해주세요</div>
+                        </div>
+                        <h5>프로필을 넣고 싶으시면 아래를 채워주세요(필수 아님)</h5>
+                        <div class="form-floating my-3">
+                            <input type="text" class="form-control" id="floatingProfileImg" placeholder="사진">
+                            <label for="floatingProfileImg">프로필 사진 링크</label>
+                            <div class='form-text'>메인 사진에 하셨던 것처럼, 사용방법에 있는대로 하신 후 <b>그대로</b> 붙여 넣어 주세요. 1:1 비율 사진을 권장드립니다.</div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingProfile" placeholder="제목">
+                            <label for="floatingProfile">프로필 이름</label>
+                            <div class='form-text'>예시: 000❤000 / 00엄마 등 </div>
+                        </div>
+                        <div>
+                            <button
+                            id='submitButton'
+                            type='submit' class='btn btn-lg btn-outline-warning col-12'
+                            onclick='sendLinkCustom()'>카카오톡 보내기</button>
+                        </div>
+                        
+                    </div>
+                </li>
+
+            </div>
+            
+        </div>
+    </div>
+    <div class='adBox mx-auto row mb-3'>
+        <div class='col-sm-12 col-md-6'>
+            <ins class="kakao_ad_area" style="display:none;"
+                data-ad-unit    = "DAN-1MgWbPmR24XFLS0j"
+                data-ad-width   = "320"
+                data-ad-height  = "100"></ins>
+            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+        </div>
+        <div class='col-sm-12 col-md-6'>
+            <ins class="kakao_ad_area" style="display:none;"
+                data-ad-unit    = "DAN-YNAUHAxWVnrArl2J"
+                data-ad-width   = "320"
+                data-ad-height  = "100"></ins>
+            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+        </div>
+    </div>
+    
+    <footer>보내시기 전에 꼭 '나에게 보내기'로 테스트 해보세요!<br>
+        오류 및 내용 추가 문의: my.personality.check@gmail.com</footer>
+</body>
+</html>
